@@ -92,6 +92,8 @@ header{
     color: var(--text-color);
     font-weight: 400;
     border-radius: 0.5rem;
+    outline: none;
+    border: none;
 }
 
 .btn:hover{
@@ -490,8 +492,7 @@ ul{
   }
 
   @media (max-width: 472px) {
-
-    header {
+    header{
         padding: 5px 2%;
     }
 
@@ -509,11 +510,11 @@ ul{
         width: 150px;
     }
 
-    .newsletter form input::placeholder {
+    .newsletter form input::placeholder{
         font-size: 0.7rem;
     }
     
-    .newsletter .btn {
+    .newsletter .btn{
         font-size: 0.5rem;
     }
 
@@ -538,6 +539,7 @@ ul{
         font-size: 0.9rem;
         padding-bottom: 0px;
   }
+}
 
   @media (max-width: 370px) {
     header{
@@ -585,5 +587,83 @@ ul{
         font-size: 0.9rem;
         padding-bottom: 0px;
   }
+}
 
-  }
+
+/* Sign up Sign In Form Styling */
+
+.sign-container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+.forms-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--background-color);
+}
+
+.sign-container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 2.2rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.input-field{
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+}
+
+.input-field i{
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    font-size: 1.1rem;
+}
+
+.input-field input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.input-field input::placeholder{
+    color: #acacac;
+    font-weight: 500;
+}
+
+.sign-container .btn{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.sign-container .social-text{
+    margin: 10px;
+}
+
+
